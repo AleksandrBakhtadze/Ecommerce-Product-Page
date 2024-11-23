@@ -1,0 +1,140 @@
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  margin-top: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.active_image {
+  width: 445px;
+  height: 445px;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.small_image {
+  width: 88px;
+  border-radius: 12px;
+  height: 88px;
+  background-size: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 445px;
+}
+
+.small_image.active {
+  border: 2px solid #ff7e1b;
+  position: relative;
+}
+
+.small_image.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffffbf;
+  border-radius: 12px;
+}
+
+.right {
+  width: 445px;
+  margin-bottom: 150px;
+}
+
+.right p {
+  color: #ff7e1b;
+  font-size: 14px;
+}
+
+.right h2 {
+  color: #1d2026;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.right span {
+  color: #69707d;
+  margin-top: 32px;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10%;
+}
+
+.right-arrow {
+  right: 10%;
+}
+
+.arrow:hover {
+  background: #f0f0f0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.close-btn:hover {
+  background: #f0f0f0;
+}
+

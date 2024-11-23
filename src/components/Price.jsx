@@ -29,6 +29,7 @@ const Price = () => {
       >
         $250.00
       </div>
+      
       <div
         style={{
           display: "flex",

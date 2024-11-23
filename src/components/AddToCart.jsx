@@ -25,8 +25,8 @@ const AddtoCart = (props) => {
         position: "fixed",
         flexDirection: "column",
         alignItems: "flex-start",
-        bottom: "120px",
-        left: "920px",
+        bottom: "550px",
+        left: "1315px",
         gap: "16px",
       }}
     >

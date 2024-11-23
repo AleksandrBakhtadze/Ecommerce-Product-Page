@@ -158,7 +158,7 @@ const Header = ({ count, setCount }) => {
                         style={{
                           position: "fixed",
                           top: "236px",
-                          right: "375px",
+                          right: "780px",
                           color: "#b6bcc8",
                           fontSize: "14px",
                         }}
@@ -168,7 +168,7 @@ const Header = ({ count, setCount }) => {
                       <strong
                         style={{
                           position: "fixed",
-                          right: "310px",
+                          right: "710px",
                           top: "250px",
                           color: "black",
                           fontSize: "14px",

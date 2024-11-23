@@ -8,8 +8,8 @@ const Price = () => {
         position: "fixed",
         flexDirection: "column",
         alignItems: "flex-start",
-        bottom: "255px",
-        left: "920px",
+        bottom: "680px",
+        left: "1330px",
         gap: "16px",
         fontSize: "28px",
         color: "#1d2026",
@@ -21,7 +21,7 @@ const Price = () => {
         style={{
           display: "flex",
           position: "fixed",
-          bottom: "230px",
+          bottom: "650px",
           fontSize: "18px",
           color: "#b6bcc8",
           textDecoration: "line-through",
@@ -29,15 +29,14 @@ const Price = () => {
       >
         $250.00
       </div>
-      
       <div
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           position: "fixed",
-          bottom: "260px",
-          left: "1030px",
+          bottom: "683px",
+          left: "1460px",
           width: "51px",
           height: "27px",
           backgroundColor: "#FFF5F0",

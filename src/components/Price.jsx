@@ -29,7 +29,6 @@ const Price = () => {
       >
         $250.00
       </div>
-      {/* Discount Box */}
       <div
         style={{
           display: "flex",

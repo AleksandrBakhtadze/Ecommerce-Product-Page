@@ -11,8 +11,20 @@ const App = () => {
     <div>
       <Header count={count} setCount={setCount} />
       <Box />
-      <Price />
-      <AddtoCart setCount={setCount} />
+
+    
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column", 
+          alignItems: "center", 
+          gap: "16px", 
+          marginTop: "32px", 
+        }}
+      >
+        <AddtoCart setCount={setCount} />
+        <Price />
+      </div>
     </div>
   );
 };

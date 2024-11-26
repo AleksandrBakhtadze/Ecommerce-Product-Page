@@ -22,12 +22,12 @@ const AddtoCart = (props) => {
     <div
       style={{
         display: "flex",
-        position: "fixed",
+        justifyContent: "center",
+        alignItems: "center",
         flexDirection: "column",
-        alignItems: "flex-start",
-        bottom: "550px",
-        left: "1315px",
         gap: "16px",
+        marginTop: "-70px", 
+        marginRight: "-550px", 
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>

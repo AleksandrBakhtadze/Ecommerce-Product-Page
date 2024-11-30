@@ -74,8 +74,8 @@ const Header = ({ count, setCount }) => {
           <div
             style={{
               position: "absolute",
-              top: "40px",
-              left: "-190px",
+              top: "60px",
+              right: "0",
               width: "360px",
               backgroundColor: "white",
               border: "1px solid #ddd",
@@ -121,7 +121,6 @@ const Header = ({ count, setCount }) => {
                     src={ShoesImage}
                     alt="product"
                     style={{
-                      marginBottom: "50px",
                       width: "100px",
                       height: "100px",
                       borderRadius: "8px",
@@ -132,13 +131,12 @@ const Header = ({ count, setCount }) => {
                     style={{
                       display: "flex",
                       flexDirection: "column",
-                      justifyContent: "center",
+                      justifyContent: "space-between",
+                      flex: "1",
                     }}
                   >
                     <p
                       style={{
-                        display: "flex",
-                        marginBottom: "60px",
                         fontWeight: "bold",
                         fontSize: "14px",
                         color: "#69707D",
@@ -149,27 +147,22 @@ const Header = ({ count, setCount }) => {
                     <div
                       style={{
                         display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                        gap: "10px",
+                        flexDirection: "column",
+                        alignItems: "flex-start",
                       }}
                     >
                       <p
                         style={{
-                          position: "fixed",
-                          top: "236px",
-                          right: "780px",
                           color: "#b6bcc8",
                           fontSize: "14px",
+                          marginLeft:"70px",
+                          marginTop: "2px",
                         }}
                       >
                         ${productPrice}.00 x {count}
                       </p>
                       <strong
                         style={{
-                          position: "fixed",
-                          right: "710px",
-                          top: "250px",
                           color: "black",
                           fontSize: "14px",
                         }}
@@ -183,7 +176,6 @@ const Header = ({ count, setCount }) => {
                     alt="delete"
                     onClick={handleDelete}
                     style={{
-                      marginBottom: "50px",
                       cursor: "pointer",
                       width: "20px",
                       height: "20px",
@@ -193,10 +185,8 @@ const Header = ({ count, setCount }) => {
                 <button
                   onClick={handleCheckout}
                   style={{
-                    position: "absolute",
-                    width: "321px",
+                    width: "300px",
                     height: "40px",
-                    top: "250px",
                     backgroundColor: "#FF7E1B",
                     color: "white",
                     border: "none",
@@ -204,6 +194,8 @@ const Header = ({ count, setCount }) => {
                     cursor: "pointer",
                     fontSize: "16px",
                     fontWeight: "bold",
+                    marginLeft:"-220px",
+                    marginTop: "100px", 
                   }}
                 >
                   Checkout
